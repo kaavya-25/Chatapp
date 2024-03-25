@@ -1,0 +1,31 @@
+@tailwind base;
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: grey;
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+    border-radius: 14px;
+  }
+
+@tailwind components;
+@tailwind utilities;
+
+.active {
+    --tw-border-opacity: 1;
+    border-color: rgb(34 197 94 / var(--tw-border-opacity));
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+    color: rgb(0 0 0 / var(--tw-text-opacity))
+}
